@@ -1,0 +1,169 @@
+
+
+<!DOCTYPE html>
+<html lang=ru>
+
+<head>
+
+	<meta charset="UTF-8">
+	<!-- <base href="/"> -->
+
+	<title>Рендер</title>
+	<meta name="description" content=>
+	<meta name="viewport" 
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<link rel="icon" href="./images/favicon.png">
+	<meta property="og:image" content="./images/dist/preview.jpg">
+	
+	<link rel="stylesheet" href="./css/main.min.css">
+
+</head>
+
+
+<body class="page page--render">
+
+<header class="page__header header footer page__header--render">
+
+  <form class="header__lang" action="#">
+    <select name="lang">
+      <option value="ru">ru</option>
+      <option value="en">en</option>
+    </select>
+  </form>
+
+  <a class="footer__inteam" href="https://munterracrew.vcv.ru/r/dreamteam">В команду</a>
+
+  <nav class="footer__socials socials">
+    <ul class="socials__list">
+
+      <li class="socials__item">
+        <a class="socials__link" href="#">
+          <svg class="socials__img socials__img--facebook">
+            <use xlink:href="./images/dist/main/socials.svg#facebook"></use>
+          </svg>
+        </a>
+      </li>
+
+      <li class="socials__item">
+        <a class="socials__link" href="#">
+          <svg class="socials__img socials__img--youtube">
+            <use xlink:href="./images/dist/main/socials.svg#youtube"></use>
+          </svg>
+        </a>
+      </li>
+
+      <li class="socials__item">
+        <a class="socials__link" href="#">
+          <svg class="socials__img socials__img--instagram">
+            <use xlink:href="./images/dist/main/socials.svg#instagram"></use>
+          </svg>
+        </a>
+      </li>
+
+      <li class="socials__item">
+        <a class="socials__link" href="#">
+          <svg class="socials__img socials__img--spotify">
+            <use xlink:href="./images/dist/main/socials.svg#spotify"></use>
+          </svg>
+        </a>
+      </li>
+
+      <li class="socials__item">
+        <a class="socials__link" href="#">
+          <svg class="socials__img socials__img--soundcloud">
+            <use xlink:href="./images/dist/main/socials.svg#soundcloud"></use>
+          </svg>
+        </a>
+      </li>
+      
+    </ul>
+  </nav>
+
+</header>
+
+<main class="page__main render">
+
+  
+<section class="render__item item item--top">
+
+  <a class="item__logo logo" href="./index.html">
+    <picture class="logo__img">
+      <source srcset="./images/dist/render/logo.png">
+      <img src="./images/dist/main/logo.png" alt="Логотип компании Munterra">
+    </picture>
+  </a>
+
+  <picture class="item__bg">
+    <source srcset="
+      ./images/dist/render/top-1920.jpg 1920w,
+      ./images/dist/render/top-1440.jpg 1440w
+      "
+      type="image/jpg">
+    <img alt="Главный зал">
+  </picture>
+
+</section>
+
+  
+<section class="render__item item">
+
+  <h2 class="item__title">
+    Здравствуй, путник. Мы знаем, что время драгоценно. Munterra — портал в пространство, где время течёт иначе. Мы изобретаем новую культуру кальяна и создаём место для встреч, открытий, игры. Бар. Музыка. Лаундж. Перезагрузка. Стань частью комьюнити Munterra и узнай о запуске первыми.
+  </h2>
+
+  <picture class="item__bg">
+    <source srcset="
+      ./images/dist/render/middle-1920.jpg 1920w,
+      ./images/dist/render/middle-1440.jpg 1440w
+      " 
+      type="image/jpg">
+    <img  alt="">
+  </picture>
+
+</section>
+
+  
+<section class="render__item item">
+
+  <button class="item__notify notify">Узнать первым</button>
+
+  <picture class="item__bg">
+    <source srcset="
+      ./images/dist/render/bottom-1920.jpg 1920w,
+      ./images/dist/render/bottom-1440.jpg 1440w
+      "
+      type="image/jpg">
+    <img alt="">
+  </picture>
+
+</section>
+
+</main>
+
+
+<section class="modal-holder">
+  <form action="#" class="modal modal--email">
+
+    <button class="modal__close"></button>
+  
+    <h2 class="modal__title">Скоро здесь откроется портал в мир Munterra. Лаундж, бар, кальяны, музыка, искусство. Оставьте свой контакт, и уже очень скоро мы отправим вам индивидуальное приглашение. Ступите на землю Munterra первыми.</h2>
+  
+    <input class="modal__input" type="text" required placeholder="Имя">
+    <input class="modal__input" type="tel" placeholder="Номер">
+    <input class="modal__input" type="email" required placeholder="E-mail">
+  
+    <button class="modal__submit" type="submit">Отправить</button>
+  
+  </form>
+</section>
+
+
+	<script src="https://unpkg.com/imask"></script>
+
+	<script src="./js/app.min.js"></script>
+
+</body>
+</html>

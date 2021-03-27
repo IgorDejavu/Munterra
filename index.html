@@ -1,0 +1,163 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang=ru>
+
+<head>
+
+	<meta charset="UTF-8">
+	<!-- <base href="/"> -->
+
+	<title>Munterra</title>
+	<meta name="description" content=Скоро здесь откроется портал в мир Munterra. Лаундж, бар, кальяны, музыка, искусство. Оставьте свой контакт, и уже очень скоро мы отправим вам индивидуальное приглашение. Ступите на землю Munterra первыми.>
+	<meta name="viewport" 
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<link rel="icon" href="./images/favicon.png">
+	<meta property="og:image" content="./images/dist/preview.jpg">
+	
+	<link rel="stylesheet" href="./css/main.min.css">
+
+</head>
+
+
+<body class="page">
+  
+<header class="page__header header">
+
+  <a href="./render.html" class="header__logo">
+    <picture class="header__logo-img">
+      <source srcset="./images/dist/main/logo.png 1920w">
+      <img src="./images/dist/main/logo.png" alt="Логотип компании Munterra">
+    </picture>
+  </a>
+
+  <button class="header__notify notify">Узнать первым</button>
+
+  <form class="header__lang" action="#">
+    <select name="lang">
+      <option value="ru">ru</option>
+      <option value="en">en</option>
+    </select>
+  </form>
+
+</header>
+
+
+<main class="page__main arch">
+
+  <picture class="arch__background">
+    <source srcset="./images/dist/main/arch.png" type="image/png">
+    <img class="arch__bg-image" src="./images/dist/main/arch.png" alt="Здесь будет портал. Останови время. Остановись сам. Дыши.">
+  </picture>
+
+  <nav class="arch__menu menu-arch">
+    <ul class="menu-arch__list">
+      <li class="menu-arch__item">
+        <a class="menu-arch__link glitch" data-name="Лаундж" href="./render.html">Лаундж</a>
+      </li>
+
+      <li class="menu-arch__item">
+        <a class="menu-arch__link glitch" data-name="Бар" href="./render.html">Бар</a>
+      </li>
+
+      <li class="menu-arch__item">
+        <a class="menu-arch__link glitch" data-name="Кальяны" href="./render.html">Кальяны</a>
+      </li>
+
+      <li class="menu-arch__item">
+        <a class="menu-arch__link glitch" data-name="Музыка" href="./render.html">Музыка</a>
+      </li>
+    </ul>
+  </nav>
+
+  <p class="arch__soon">Скоро</p>
+</main>
+
+<footer class="page__footer footer">
+
+  <a class="footer__inteam" href="https://munterracrew.vcv.ru/r/dreamteam">В команду</a>
+
+  <nav class="footer__socials socials">
+    <ul class="socials__list">
+
+      <li class="socials__item">
+        <a class="socials__link" href="#">
+          <svg class="socials__img socials__img--facebook">
+            <use xlink:href="./images/dist/main/socials.svg#facebook"></use>
+          </svg>
+        </a>
+      </li>
+
+      <li class="socials__item">
+        <a class="socials__link" href="#">
+          <svg class="socials__img socials__img--youtube">
+            <use xlink:href="./images/dist/main/socials.svg#youtube"></use>
+          </svg>
+        </a>
+      </li>
+
+      <li class="socials__item">
+        <a class="socials__link" href="#">
+          <svg class="socials__img socials__img--instagram">
+            <use xlink:href="./images/dist/main/socials.svg#instagram"></use>
+          </svg>
+        </a>
+      </li>
+
+      <li class="socials__item">
+        <a class="socials__link" href="#">
+          <svg class="socials__img socials__img--spotify">
+            <use xlink:href="./images/dist/main/socials.svg#spotify"></use>
+          </svg>
+        </a>
+      </li>
+
+      <li class="socials__item">
+        <a class="socials__link" href="#">
+          <svg class="socials__img socials__img--soundcloud">
+            <use xlink:href="./images/dist/main/socials.svg#soundcloud"></use>
+          </svg>
+        </a>
+      </li>
+      
+    </ul>
+  </nav>
+
+</footer>
+
+<video class="page__video-bg" muted="muted" autoplay="autoplay" playsinline="playsinline" loop="loop">
+  <source src="./video.webm" type='video/webm; codecs="vp8, vorbis"'/>
+  <source src="./video.mp4"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
+  Ваш браузер не поддерживает HTML5 тег video.
+</video>
+
+
+<section class="modal-holder">
+  <form action="#" class="modal modal--email">
+
+    <button class="modal__close"></button>
+  
+    <h2 class="modal__title">Скоро здесь откроется портал в мир Munterra. Лаундж, бар, кальяны, музыка, искусство. Оставьте свой контакт, и уже очень скоро мы отправим вам индивидуальное приглашение. Ступите на землю Munterra первыми.</h2>
+  
+    <input class="modal__input" type="text" required placeholder="Имя">
+    <input class="modal__input" type="tel" placeholder="Номер">
+    <input class="modal__input" type="email" required placeholder="E-mail">
+  
+    <button class="modal__submit" type="submit">Отправить</button>
+  
+  </form>
+</section>
+
+
+	<script src="https://unpkg.com/imask"></script>
+
+	<script src="./js/app.min.js"></script>
+
+</body>
+</html>
